@@ -120,14 +120,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../assets/hero-bg.jpg') center/cover no-repeat;
+    position: relative;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    overflow: hidden;
 }
 
 .hero-content {
@@ -170,6 +173,16 @@ h1, h2, h3, h4, h5, h6 {
     60% {
         transform: translate(-50%, -10px);
     }
+}
+
+.snow-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* About Section */
