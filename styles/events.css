@@ -1,0 +1,189 @@
+/* Events Page Specific Styles */
+.page-hero {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../assets/events-bg.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.events-filter {
+    padding: 2rem 10%;
+    background-color: var(--background-darker);
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: var(--background-darker);
+}
+
+/* Events Timeline */
+.events-timeline-full {
+    padding: 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.event-item {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.event-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-date .day {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.event-date .year {
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.event-time,
+.event-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.event-description {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.event-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: var(--background-darker);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-hero {
+        height: 30vh;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .events-timeline-full {
+        padding: 2rem 5%;
+    }
+
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-date {
+        margin: 0 auto;
+    }
+
+    .event-actions {
+        justify-content: center;
+    }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+} 

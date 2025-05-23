@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - LITSOC</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/awards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="LITSOC Logo">
+            <span>LITSOC</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="works.html">Works</a>
+            <a href="awards.html" class="active">Awards</a>
+            <a href="events.html">Events</a>
+            <a href="team.html">Team</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <h1>Our Achievements</h1>
+        <p>Celebrating excellence in literature and creativity</p>
+    </div>
+
+    <section class="awards-filter">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Awards</button>
+            <button class="filter-btn" data-filter="competition">Competitions</button>
+            <button class="filter-btn" data-filter="recognition">Recognition</button>
+            <button class="filter-btn" data-filter="publication">Publications</button>
+        </div>
+    </section>
+
+    <section class="awards-grid">
+        <!-- Competition Awards -->
+        <div class="award-card" data-category="competition">
+            <div class="award-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="award-content">
+                <h3>National Poetry Competition</h3>
+                <p class="award-date">December 2023</p>
+                <p class="award-description">First place in the National Inter-College Poetry Competition</p>
+                <div class="award-details">
+                    <span class="award-category">Poetry</span>
+                    <span class="award-level">National</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/winner1.jpg" alt="Winner">
+                    <p>John Snow</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="award-card" data-category="competition">
+            <div class="award-icon">
+                <i class="fas fa-medal"></i>
+            </div>
+            <div class="award-content">
+                <h3>Story Writing Championship</h3>
+                <p class="award-date">October 2023</p>
+                <p class="award-description">Best Story Award in the State Level Writing Competition</p>
+                <div class="award-details">
+                    <span class="award-category">Prose</span>
+                    <span class="award-level">State</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/winner2.jpg" alt="Winner">
+                    <p>Daenerys Targaryen</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recognition Awards -->
+        <div class="award-card" data-category="recognition">
+            <div class="award-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="award-content">
+                <h3>Best Literary Club</h3>
+                <p class="award-date">September 2023</p>
+                <p class="award-description">Recognition for outstanding contribution to literary activities</p>
+                <div class="award-details">
+                    <span class="award-category">Club</span>
+                    <span class="award-level">University</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/team-photo.jpg" alt="Team">
+                    <p>LITSOC Team</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="award-card" data-category="recognition">
+            <div class="award-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="award-content">
+                <h3>Excellence in Event Organization</h3>
+                <p class="award-date">July 2023</p>
+                <p class="award-description">Award for organizing the most successful literary festival</p>
+                <div class="award-details">
+                    <span class="award-category">Events</span>
+                    <span class="award-level">Regional</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/event-team.jpg" alt="Event Team">
+                    <p>Event Organizing Team</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Publication Awards -->
+        <div class="award-card" data-category="publication">
+            <div class="award-icon">
+                <i class="fas fa-book"></i>
+            </div>
+            <div class="award-content">
+                <h3>Best Literary Magazine</h3>
+                <p class="award-date">May 2023</p>
+                <p class="award-description">Recognition for our quarterly literary publication</p>
+                <div class="award-details">
+                    <span class="award-category">Publication</span>
+                    <span class="award-level">State</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/magazine-team.jpg" alt="Magazine Team">
+                    <p>Editorial Team</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="award-card" data-category="publication">
+            <div class="award-icon">
+                <i class="fas fa-pen-fancy"></i>
+            </div>
+            <div class="award-content">
+                <h3>Best Poetry Collection</h3>
+                <p class="award-date">March 2023</p>
+                <p class="award-description">Award for our published collection of student poems</p>
+                <div class="award-details">
+                    <span class="award-category">Poetry</span>
+                    <span class="award-level">National</span>
+                </div>
+                <div class="award-winner">
+                    <img src="assets/poetry-team.jpg" alt="Poetry Team">
+                    <p>Poetry Collection Team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: litsoc@vssut.ac.in</p>
+                <p>Phone: +91 XXXXXXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LITSOC - Literature Society of VSSUT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/awards.js"></script>
+</body>
+</html> 
