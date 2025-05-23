@@ -26,7 +26,7 @@
 /* Filter Section */
 .events-filter {
     padding: 2rem 10%;
-    background-color: var(--background-darker);
+    /* background-color: var(--background-darker); */
     text-align: center;
 }
 

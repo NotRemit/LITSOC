@@ -77,15 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Read/View/Watch button functionality
-    const actionButtons = document.querySelectorAll('.btn-read, .btn-watch, .btn-view');
-    actionButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            const action = button.classList.contains('btn-read') ? 'reading' :
-                          button.classList.contains('btn-watch') ? 'watching' :
-                          'viewing';
-            const title = button.closest('.pin-overlay').querySelector('h3').textContent;
-            alert(`${action} ${title} will be available soon!`);
-        });
-    });
+    // const actionButtons = document.querySelectorAll('.btn-read, .btn-watch, .btn-view');
+    // actionButtons.forEach(button => {
+    //     button.addEventListener('click', (e) => {
+    //         e.preventDefault();
+    //         const action = button.classList.contains('btn-read') ? 'reading' :
+    //                       button.classList.contains('btn-watch') ? 'watching' :
+    //                       'viewing';
+    //         const title = button.closest('.pin-overlay').querySelector('h3').textContent;
+    //         alert(`${action} ${title} will be available soon!`);
+    //     });
+    // });
 }); 
